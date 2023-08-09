@@ -41,9 +41,9 @@
 
 <body class="font-lato">
     <header class="container mx-auto">
-        <nav class="flex lg:flex-row md:flex-row justify-between bg-primary rounded-[600px]  my-12 px-12 py-6 items-center text-center ">
+        <nav class="flex md:flex-row justify-between md:bg-primary md:rounded-[600px]  my-12 px-12 py-6 items-center text-center ">
             <div class="items-center text-center justify-center">
-                <ul class="menu menu-horizontal text-white">
+                <ul class="menu lg:menu-horizontal text-white">
                     <li>
                       <a>
                         <h4>Home</h4>
@@ -66,16 +66,26 @@
                       </li>
                   </ul>
             </div>
+            <!-- <div class="flex-none">
+                <button class="btn btn-square btn-ghost text-white">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+
+                    
+                    
+                </svg>
+                </button>
+              </div> -->
             <div>
                 <h1 class="flex flex-row text-white text-4xl font-extrabold items-center text-center"><img src="images/logo.png" alt="" class="h-14"> Fruit Burst</h1>
             </div>
-            <div class="form-control flex flex-row items-center gap-4">
+            <div class="md:form-control  md:flex-row  items-center gap-4">
                 <input type="text" placeholder="Search here" class="input input-bordered rounded-[50px] bg-white w-auto md:w-auto"/>
                 <i class="fa-solid fa-magnifying-glass text-white"></i>
 
             </div>
         </nav>
-        <div class="relative flex-col">
+        <div class="lg:relative lg:flex-col ">
             <div class="">
                 <div class="carousel w-full">
                     <div id="slide1" class="carousel-item relative w-full">
@@ -152,8 +162,8 @@
                     </div>
                   </div>
             </div>
-            <section class="absolute mt-28 px-10 py-11 z-10 rounded-lg w-[1000px] bg-white mx-[122px] top-96">
-                <div class="flex flex-row justify-between">
+            <section class="lg:absolute mt-28 px-10 py-11 z-10 rounded-lg lg:w-[1000px] lg:bg-white mx-[122px] top-96 items-center content-center">
+                <div class="flex lg:flex-row md:flex-row  justify-between">
                     <div class="card w-50 bg-white ">
                         <figure class="px-10 pt-10">
                           <img src="/images/fruit1.png" alt="Shoes" class="rounded-xl" />
@@ -198,12 +208,274 @@
             </section>
         </div>
     </header>
-    <main>
-
+    <main class="container mx-auto items-center justify-center content-center">
+        <section class="mt-48 flex gap-96 justify-between ">
+            <div>
+                <h1 class="text-[48px]">Deal of the day</h1>
+                <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+            </div>
+            <div>
+                <div class="grid grid-flow-col gap-5 text-center font-extrabold auto-cols-max">
+                    <div class="flex flex-col p-2 text-center ">
+                      <span class="countdown text-center  text-5xl">
+                        <span style="--value:30;"></span>:
+                      </span>
+                      Days
+                    </div> 
+                    
+                    <div class="flex flex-col p-2 text-center  ">
+                      <span class="countdown text-center  text-5xl">
+                        <span style="--value:15;"></span>:
+                      </span>
+                      Hours
+                    </div> 
+                    
+                    <div class="flex flex-col p-2 text-center   ">
+                      <span class="countdown  text-5xl">
+                        <span style="--value:25;"></span>:
+                      </span>
+                      Minutes
+                    </div> 
+                   
+                    <div class="flex flex-col p-2 text-center   ">
+                      <span class="countdown  text-5xl">
+                        <span style="--value:08;"></span>
+                      </span>
+                      Seconds
+                    </div>
+                  </div>
+            </div>
+        </section>
+        <section class="my-12 items-center text-center">
+            <div class="flex items-center justify-between">
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                      <img src="/images/fruit6.png" alt="Apples"class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">12.90$ - 18.85$</h2>
+                      <p>Apples</p>
+                      <div class="rating">
+                        <input type="radio" name="rating-1" class="mask mask-star bg-primary" />
+                        <input type="radio" name="rating-1" class="mask mask-star bg-primary" checked />
+                        <input type="radio" name="rating-1" class="mask mask-star bg-primary" />
+                        <input type="radio" name="rating-1" class="mask mask-star bg-primary" />
+                        <input type="radio" name="rating-1" class="mask mask-star bg-primary" />
+                      </div>
+                      <p><a href="" class="no-underline text-[#F85559] pt-8">Details</a></p>
+                    </div>
+                  </div>
+                  <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                      <img src="/images/fruit7.png" alt="Apples"class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">12.90$ - 18.85$</h2>
+                      <p>Orange</p>
+                      <div class="rating">
+                        <input type="radio" name="rating-1" class="mask mask-star bg-primary" />
+                        <input type="radio" name="rating-1" class="mask mask-star bg-primary" checked />
+                        <input type="radio" name="rating-1" class="mask mask-star bg-primary" />
+                        <input type="radio" name="rating-1" class="mask mask-star bg-primary" />
+                        <input type="radio" name="rating-1" class="mask mask-star bg-primary" />
+                      </div>
+                      <p><a href="" class="no-underline text-[#F85559] pt-8">Details</a></p>
+                    </div>
+                  </div>
+                  <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                      <img src="/images/fruit8.png" alt="Apples"class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">12.90$ - 18.85$</h2>
+                      <p>Red Dragon</p>
+                      <div class="rating">
+                        <input type="radio" name="rating-1" class="mask mask-star bg-primary" />
+                        <input type="radio" name="rating-1" class="mask mask-star bg-primary" checked />
+                        <input type="radio" name="rating-1" class="mask mask-star bg-primary" />
+                        <input type="radio" name="rating-1" class="mask mask-star bg-primary" />
+                        <input type="radio" name="rating-1" class="mask mask-star bg-primary" />
+                      </div>
+                      <p><a href="" class="no-underline text-[#F85559] pt-8">Details</a></p>
+                    </div>
+                  </div>
+                  <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                      <img src="/images/fruit9.png" alt="Apples"class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">12.90$ - 18.85$</h2>
+                      <p>Banana</p>
+                      <div class="rating">
+                        <input type="radio" name="rating-1" class="mask mask-star bg-primary" />
+                        <input type="radio" name="rating-1" class="mask mask-star bg-primary" checked />
+                        <input type="radio" name="rating-1" class="mask mask-star bg-primary" />
+                        <input type="radio" name="rating-1" class="mask mask-star bg-primary" />
+                        <input type="radio" name="rating-1" class="mask mask-star bg-primary" />
+                      </div>
+                      <p><a href="" class="no-underline text-[#F85559] pt-8">Details</a></p>
+                    </div>
+                  </div>
+            </div>
+            <button class="btn bg-primary text-white mt-12">Shope All</button>
+        </section>
+        <section class="">
+            <div id="slide1" class="carousel-item relative w-full">
+                <img src="/images/banner1.png" class="w-full opacity-40" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                  
+                  <div class="text-center items-center gap-7">
+                      <h1 class="text-white text-7xl font-extrabold text-center items-center px-96">
+                        Meet the team section
+                      </h1>
+                      <p class="text-center items-center px-96 mt-7 text-white">
+                        Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                      </p>
+                    <div class="flex items-center justify-between">
+                        <div class="card w-96 shadow-xl">
+                            <figure class="px-10 pt-10">
+                              <img src="/images/member1.png" alt="Shoes" class="rounded-full" />
+                            </figure>
+                            <div class="card-body items-center text-center">
+                              <h2 class="card-title text-white">Awlad Hossain</h2>
+                              <p class="text-white">Fruits Expert</p>
+                              <div class="flex gap-1">
+                                <i class="fa-brands fa-facebook text-[#F85559]"></i>
+                                <i class="fa-brands fa-square-twitter text-[#F85559]"></i>
+                                <i class="fa-brands fa-linkedin text-[#F85559]"></i>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="card w-96 shadow-xl">
+                            <figure class="px-10 pt-10">
+                              <img src="/images/member2.png" alt="Shoes" class="rounded-full" />
+                            </figure>
+                            <div class="card-body items-center text-center">
+                              <h2 class="card-title text-white">Safia Chowdhury</h2>
+                              <p class="text-white">Fruits Expert</p>
+                              <div class="flex gap-1">
+                                <i class="fa-brands fa-facebook text-[#F85559]"></i>
+                                <i class="fa-brands fa-square-twitter text-[#F85559]"></i>
+                                <i class="fa-brands fa-linkedin text-[#F85559]"></i>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="card w-96 shadow-xl">
+                            <figure class="px-10 pt-10">
+                              <img src="/images/member3.png" alt="Shoes" class="rounded-full" />
+                            </figure>
+                            <div class="card-body items-center text-center">
+                              <h2 class="card-title text-white">Rakib Hossain</h2>
+                              <p class="text-white">Fruits Expert</p>
+                              <div class="flex gap-1">
+                                <i class="fa-brands fa-facebook text-[#F85559]"></i>
+                                <i class="fa-brands fa-square-twitter text-[#F85559]"></i>
+                                <i class="fa-brands fa-linkedin text-[#F85559]"></i>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="card w-96 shadow-xl">
+                            <figure class="px-10 pt-10">
+                              <img src="/images/member4.png" alt="Shoes" class="rounded-full" />
+                            </figure>
+                            <div class="card-body items-center text-center">
+                              <h2 class="card-title text-white">Chaity</h2>
+                              <p class="text-white">Fruits Expert</p>
+                              <div class="flex gap-1">
+                                <i class="fa-brands fa-facebook text-[#F85559]"></i>
+                                <i class="fa-brands fa-square-twitter text-[#F85559]"></i>
+                                <i class="fa-brands fa-linkedin text-[#F85559]"></i>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  
+                </div>
+            </div> 
+        </section>
+        <section class="container mx-auto items-center justify-center content-center text-center my-36">
+            <h1 class="text-5xl">Why Choose Us</h1>
+            <p class="mt-6 mb-12">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+            <div class="flex gap-12 items-center justify-center">
+                <div class="gap-3 items-center justify-center">
+                    <div class="flex items-center text-left gap-6">
+                        <div><i class="fa-solid fa-users-viewfinder text-4xl font-extrabold items-center text-center"></i></div>
+                        <div class="gap-5">
+                            <h1 class="text-2xl">Dedicated Team</h1>
+                            <div class="w-24 h-1 bg-black"></div>
+                            <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center text-left gap-6 my-12">
+                        <div><i class="fa-solid fa-shield-heart text-4xl font-extrabold items-center text-center"></i></div>
+                        <div class="gap-5">
+                            <h1 class="text-2xl">Fresh is Best</h1>
+                            <div class="w-24 h-1 bg-black"></div>
+                            <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center text-left gap-6">
+                        <div><i class="fa-solid fa-gifts text-4xl font-extrabold items-center text-center"></i></div>
+                        <div class="gap-5">
+                            <h1 class="text-2xl">Gift Certificates</h1>
+                            <div class="w-24 h-1 bg-black"></div>
+                            <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                        </div>
+                    </div>
+                </div>
+                <div><img src="images/whychoose1.png" alt="" class="items-center justify-center"></div>
+                <div class="gap-3 items-center justify-center">
+                    <div class="flex items-center text-right gap-6">
+                        <div class="gap-5">
+                            <h1 class="text-2xl">Integrated Supplier</h1>
+                            <div class="w-24 h-1 bg-black "></div>
+                            <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                        </div>
+                        <div><i class="fa-solid fa-apple-whole text-4xl font-extrabold items-center text-center"></i></div>
+                    </div>
+                    <div class="flex items-center text-right gap-6 my-12">
+                        <div class="gap-5">
+                            <h1 class="text-2xl">Sustainable Practice</h1>
+                            <div class="w-24 h-1 bg-black "></div>
+                            <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                        </div>
+                        <div><i class="fa-regular fa-ice-cream text-4xl font-extrabold items-center text-center"></i></div>
+                    </div>
+                    <div class="flex items-center text-right gap-6">
+                        <div class="gap-5">
+                            <h1 class="text-2xl">The Benefits Only</h1>
+                            <div class="w-24 h-1 bg-black "></div>
+                            <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                        </div>
+                        <div><i class="fa-regular fa-thumbs-up text-4xl font-extrabold items-center text-center"></i></div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer>
+    <footer class="footer footer-center p-36 bg-black text-base-content rounded">
+        
+        <div>
+            <h1 class="flex flex-row text-white text-4xl font-extrabold items-center text-center"><img src="images/logo.png" alt="" class="h-14"> Fruit Burst</h1>
+          </div> 
 
-    </footer>
+        <div class="grid grid-flow-col gap-4">
+          <a class="link link-hover">Home</a> 
+          <a class="link link-hover">About Us</a> 
+          <a class="link link-hover">Shop</a> 
+          <a class="link link-hover">All Fruits</a>
+          <a class="link link-hover">Support</a>
+          <a class="link link-hover">My Account</a>
+        </div> 
+        <div>
+          <div class="grid grid-flow-col gap-4">
+            <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg></a> 
+            <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path></svg></a> 
+            <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path></svg></a>
+          </div>
+        </div>
+      </footer>
 </body>
 
 </html>
